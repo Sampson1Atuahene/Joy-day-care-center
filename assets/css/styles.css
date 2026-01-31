@@ -1,13 +1,15 @@
 /* Simple responsive styles for the Joy Day demo site */
 :root{
-  --primary:#f05454; /* balloon */
-  --accent:#64c061; /* green */
-  --text:#0f1724;
+  --primary:#ff8fb1; /* soft pink */
+  --primary-dark:#ff6f98; /* accent pink */
+  --accent:#7ad8a7; /* mint */
+  --playful:#ffd97a; /* sunny */
+  --text:#12323a; /* warm text */
   --muted:#6b7280;
   --container:1100px;
-}
+} 
 *{box-sizing:border-box}
-body{font-family:Poppins, Arial, sans-serif; color:var(--text); margin:0; background:#fff}
+body{font-family:'Baloo 2', Poppins, Arial, sans-serif; color:var(--text); margin:0; background:linear-gradient(180deg,#fff,#fffefc)}
 .container{max-width:var(--container); margin:0 auto; padding:32px}
 .header-inner{display:flex; align-items:center; justify-content:space-between}
 .site-header{position:sticky; top:0; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); z-index:100}
@@ -18,27 +20,29 @@ body{font-family:Poppins, Arial, sans-serif; color:var(--text); margin:0; backgr
 .nav-dropdown:hover .dropdown{display:block}
 .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--text)}
 .brand-icon{width:56px; height:56px}
-.brand-title{font-weight:700; font-size:18px; letter-spacing:1px}
+.brand-title{font-weight:700; font-size:20px; letter-spacing:1px; color:var(--primary-dark)}
 .brand-sub{font-weight:600; font-size:12px; color:var(--muted)}
 .site-nav{display:flex; gap:18px; align-items:center}
 .site-nav a{color:var(--text); text-decoration:none}
-.btn{display:inline-block; padding:10px 16px; border-radius:8px; text-decoration:none; background:transparent; color:var(--text); border:1px solid rgba(15,23,36,0.06)}
-.btn-primary{background:var(--primary); color:#fff; border:0}
+.btn{display:inline-block; padding:12px 18px; border-radius:999px; text-decoration:none; background:transparent; color:var(--text); border:1px solid rgba(15,23,36,0.06); box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.btn-primary{background:var(--primary-dark); color:#fff; border:0; box-shadow:0 8px 24px rgba(255,111,152,0.12)}
 .btn-lg{padding:14px 20px}
 .nav-toggle{display:none; background:transparent; border:0; font-size:22px}
 
 .hero{background:linear-gradient(180deg, #fff 0%, #f8fafc 100%); padding:48px 0}
 .hero-inner{display:flex; gap:24px; align-items:center}
 .hero-copy{flex:1}
-.hero-copy h1{font-size:36px; margin:0 0 12px}
+.hero-copy h1{font-size:48px; margin:0 0 12px; color:var(--primary-dark); line-height:1.05; letter-spacing:0.4px} 
 .hero-copy p{margin:0 0 12px; color:var(--muted)}
 .kicker{font-weight:600; color:var(--text)}
 .hero-image img{max-width:320px}
 
 .features{padding:28px 0}
+
+h2{color:var(--primary-dark); font-size:22px; margin-bottom:10px}
 .grid{display:grid; gap:18px}
 .cols-3{grid-template-columns:repeat(3,1fr)}
-.card{background:#fff; border-radius:12px; padding:18px; box-shadow:0 8px 20px rgba(2,6,23,0.04)}
+.card{background:#fff; border-radius:20px; padding:18px; box-shadow:0 10px 30px rgba(2,6,23,0.06)}
 
 .split{display:flex; gap:24px}
 .split > *{flex:1}
@@ -61,7 +65,10 @@ body{font-family:Poppins, Arial, sans-serif; color:var(--text); margin:0; backgr
 .hero-copy .lead{font-size:18px; color:var(--muted); margin-top:6px}
 .hero-features{list-style:none; padding:0; display:flex; gap:14px; margin:14px 0 18px}
 .hero-features li{background:rgba(255,255,255,0.9); padding:8px 12px; border-radius:8px; font-size:14px}
-.hero-media img{max-width:460px; border-radius:14px; box-shadow:0 12px 30px rgba(2,6,23,0.12)}
+.hero-media img{max-width:460px; border-radius:20px; box-shadow:0 16px 40px rgba(2,6,23,0.12)}
+.hero-illustration{max-width:220px; display:block; margin-bottom:14px;}
+@keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+.hero-illustration{animation:floaty 4s ease-in-out infinite}
 
 .photo-grid .card.photo{overflow:hidden}
 .card.photo img{width:100%; height:180px; object-fit:cover; display:block}
@@ -81,7 +88,7 @@ body{font-family:Poppins, Arial, sans-serif; color:var(--text); margin:0; backgr
   .hero-media img{max-width:100%}
 }
 .staff-card{background:#fff; border-radius:12px; text-align:center; padding:12px}
-.staff-card img{width:100%; height:220px; object-fit:cover; border-radius:8px}
+.staff-card img{width:140px; height:140px; object-fit:cover; border-radius:50%; margin:0 auto; display:block} .staff-card{padding-top:6px} .staff-card h3{margin:12px 0 6px} .staff-card p{margin:0} 
 .staff-card h3{margin:12px 0 6px}
 
 .testimonials{background:linear-gradient(180deg,#fff,#fbfafb); padding:28px 0}
@@ -90,7 +97,7 @@ body{font-family:Poppins, Arial, sans-serif; color:var(--text); margin:0; backgr
 .testimonial.active{display:block}
 
 .price-card{background:#fff; border-radius:12px; padding:18px; text-align:center}
-.price-card .price{font-size:22px; font-weight:700; color:var(--primary)}
+.price-card .price{font-size:22px; font-weight:700; color:var(--accent)}
 .price-card.recommended{box-shadow:0 12px 30px rgba(0,0,0,0.08); transform:translateY(-6px)}
 
 .faq-list{margin-top:18px}
