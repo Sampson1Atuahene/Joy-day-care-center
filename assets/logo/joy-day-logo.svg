@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Joy Day Care Center logo</title>
+  <desc id="desc">Two children playing with a red balloon above the wordmark JOY DAY CARE CENTER and the tagline.</desc>
+  <defs>
+    <linearGradient id="grassGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#98e08a"/>
+      <stop offset="1" stop-color="#64c061"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Ground -->
+  <ellipse cx="600" cy="420" rx="420" ry="70" fill="url(#grassGrad)" opacity="0.95" />
+
+  <!-- Girl (left) -->
+  <g transform="translate(380,240) scale(1)">
+    <circle cx="-20" cy="-120" r="36" fill="#ffe6d6" /> <!-- face -->
+    <path d="M -52 -88 q 30 -20 64 0 q -10 -24 -30 -36 q -18 14 -34 36 z" fill="#000" opacity="0.85" /> <!-- hair bun area -->
+    <path d="M -84 -54 q 28 18 68 0 l -18 60 q -22 10 -32 -4 z" fill="#ed6d6d" /> <!-- dress -->
+    <circle cx="-40" cy="-132" r="8" fill="#000" /> <!-- bun -->
+    <ellipse cx="-52" cy="-108" rx="6" ry="3" fill="#000" opacity="0.6" /> <!-- eye -->
+    <ellipse cx="-28" cy="-108" rx="6" ry="3" fill="#000" opacity="0.6" />
+    <path d="M -45 -94 q 12 12 26 0" stroke="#b84d4d" stroke-width="3" fill="none" stroke-linecap="round"/> <!-- smile -->
+    <!-- arm -->
+    <path d="M -20 -70 q 40 6 76 -14" stroke="#ffe6d6" stroke-width="14" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Boy (right) -->
+  <g transform="translate(740,260) scale(1)">
+    <circle cx="20" cy="-120" r="36" fill="#ffe6d6" />
+    <path d="M 52 -88 q -30 -20 -64 0 q 10 -24 30 -36 q 18 14 34 36 z" fill="#0f1724" opacity="0.9" />
+    <path d="M 36 -54 q -24 18 -68 0 l 18 60 q 22 10 32 -4 z" fill="#6bd1a6" />
+    <ellipse cx="8" cy="-108" rx="6" ry="3" fill="#000" opacity="0.6" />
+    <ellipse cx="28" cy="-108" rx="6" ry="3" fill="#000" opacity="0.6" />
+    <path d="M 2 -94 q 12 12 26 0" stroke="#083827" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- arm reaching -->
+    <path d="M 60 -74 q -28 16 -58 8" stroke="#ffe6d6" stroke-width="14" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Balloon and string -->
+  <g transform="translate(578,70)">
+    <ellipse cx="0" cy="0" rx="34" ry="44" fill="#f05454" filter="url(#soft)"/>
+    <path d="M 0 44 q 10 24 0 48" stroke="#a03535" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <rect x="-2" y="44" width="4" height="12" rx="2" fill="#a03535" />
+    <path d="M 0 56 q -18 34 -120 120" stroke="#b8b8b8" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(600,500)">
+    <text text-anchor="middle" font-family="Poppins, 'Nunito', Arial, sans-serif" font-weight="700" font-size="64" fill="#0f1724">JOY DAY</text>
+    <text text-anchor="middle" y="40" font-family="Poppins, 'Nunito', Arial, sans-serif" font-weight="600" font-size="28" fill="#0f1724" letter-spacing="8">CARE CENTER</text>
+    <text text-anchor="middle" y="82" font-family="Cormorant Garamond, serif" font-size="18" fill="#4b5563">Caring for Children, Supporting Families, Day and Night</text>
+  </g>
+
+  <!-- Logo bounding box (invisible) -->
+  <rect x="0" y="0" width="1200" height="600" fill="none" />
+</svg>
